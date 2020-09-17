@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>The Dean's Time</title>
+        <style>
+            body{
+                display: flex;
+                height: 20vh;
+                justify-content: center;
+            }
+            @keyframes InfiniteCoinFlip{
+                0%{
+                    transform: rotateY(0) rotateX();
+                }
+                25%{
+                    transform: scale(2);
+                }
+                50%{
+                    transform: rotateY(90deg) translateY(-50px);
+                    border-radius: 0px;
+                    border-color: tomato;
+                }
+                75%{
+                    transform: scale(2);
+                    border-radius: 0px;
+                }
+                100%{
+                    transform: rotateY(0) rotateX();
+
+                }
+            }
+            img{
+                border: 10px solid black;
+                border-radius: 25%;
+                width: 200px;
+                animation: InfiniteCoinFlip 5s ease-in-out infinite ;
+            }
+
+         
+        </style>
+    </head>
+    <body>
+        <img src="data:image/png;base64,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"/>
+
+    </body>
+</html>
