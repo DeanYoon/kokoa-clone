@@ -1,4 +1,4 @@
 # Kokoa Clone 2020 update
 
 
-I love it
+HTML and CSS got sooo much better and fun to look
